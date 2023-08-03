@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <title>Submit a Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Maths Mastery</h1>
+        </header>
+        <nav class="navbar">
+            <div class="brand-title">Maths Mastery</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about-anchor">About</a></li>
+                    <li><a href="prospectus.html">Prospectus</a></li>
+                    <li><a href="bookings.html">Book a Lesson</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <article class="form">
+                <h2>Submit a Form</h2>
+                <br><p>Please fill out the form below, and we will be in touch.</p>
+                <br><p>Fields marked with an asterisk (*) are required.</p>
+                <br>
+                <form action="/thank-you.html">
+                    <div class="names-container">
+                    <div>
+                        <div class="input-label">
+                        <label for="first-name">First Name *</label>
+                    </div>
+                    <div class="input-content">
+                        <input type="text" name="names[first_name]" id="first-name" class="form-input" placeholder="First Name" required>
+                    </div>
+                    </div>
+                    <div>
+                    <div class="input-label">
+                        <label for="surname">Surname *</label>
+                    </div>
+                    <div class="input-content">
+                        <input type="text" name="names[surname]" id="surname" class="form-input" placeholder="Surname" required>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="input-label">
+                        <label for="email">Email *</label>
+                    </div>
+                    <div class="input-content">
+                        <input type="email" name="email" id="email" id="email" class="form-input" placeholder="Email" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="phone">Phone</label>
+                    </div>
+                    <div class="input-content">
+                        <input type="text" name="phone" id="phone" class="form-input" placeholder="Phone/Mobile Number">
+                    </div>
+                    <div class="input-label">
+                        <label for="contact-method">Preferred Contact Method</label>
+                    </div>
+                    <div class="input-content">
+                        <input type="radio" name="contact-method" id="em" style="cursor: pointer;">
+                            <label for="em">Email</label>
+                        <input type="radio" name="contact-method" id="mob" style="cursor: pointer;">
+                            <label for="mob">Phone</label>
+                    </div>
+                    <div class="input-label">
+                        <label for="qualification">Qualification *</label>
+                    </div>
+                    <div class="input-content">
+                        <select name="qualification" id="qualification" style="cursor: pointer;" required>
+                            <option value="" selected disabled hidden>Select...</option>
+                            <option value="q1">A-Level</option>
+                            <option value="q2">GCSE</option>
+                            <option value="q3">11-plus</option>
+                            <option value="q4">SATs</option>
+                            <option value="q5">Other/Unsure</option>
+                        </select>
+                    </div>
+                    <div class="input-label">
+                        <label for="exam-board">Exam Board *</label>
+                    </div>
+                    <div class="input-content">
+                        <select name="exam-board" id="exam-board" style="cursor: pointer;" required>
+                            <option value="" selected disabled hidden>Select...</option>
+                            <option value="q1">Edexcel</option>
+                            <option value="q2">OCR</option>
+                            <option value="q3">AQA</option>
+                            <option value="q4">CCEA</option>
+                            <option value="q5">WJEC</option>
+                            <option value="q6">Other/Unsure</option>
+                        </select>
+                    </div>
+                    <div class="input-label">
+                        <label for="tier">Exam Tier *</label>
+                    </div>
+                    <div class="input-content">
+                        <input type="radio" name="tier" value="h" id="option-h" style="cursor: pointer;" required>
+                            <label for="option-h">Higher</label>
+                        <input type="radio" name="tier" value="f" id="option-f" style="cursor: pointer;">
+                            <label for="option-f">Foundation</label>
+                        <input type="radio" name="tier" value="unsure" id="option-unsure" style="cursor: pointer;">
+                            <label for="option-unsure">Unsure/Neither</label>
+                    </div>
+                    <div class="grades-container">
+                    <div>
+                    <div class="input-label">
+                        <label for="current-grade">Current Grade</label>
+                    </div>
+                    <div class="input-content">
+                        <input type="text" name="current-grade" id="current-grade" class="form-input" placeholder="Current Grade">
+                    </div>
+                    </div>
+                    <div>
+                    <div>
+                    <div class="input-label">
+                        <label for="target-grade">Target Grade</label>
+                    </div>
+                    </div>
+                    <div class="input-content">
+                        <input type="text" name="target-grade" id="target-grade" class="form-input" placeholder="Target Grade">
+                    </div>
+                    </div>
+                    </div>
+                    <div class="input-label">
+                        <label for="message">Your Message (optional)</label>
+                    </div>
+                    <div class="input-content">
+                        <textarea name="message" id="message" cols="40" rows="6" class="form-input" placeholder="Type your message here..."></textarea>
+                    </div>
+                    <br><input type="submit" class="submit-button">
+                </form>
+            </article>
+        </main>
+        <footer>
+            <p class="copyright">Copyright 2023 Maths Mastery</p>
+        </footer>
+    </body>
+</html>
